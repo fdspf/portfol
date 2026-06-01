@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Николай Бибко — Разработчик</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Unbounded:wght@300;400;700;900&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+    <!-- Cursor -->
+    <div class="cursor" id="cursor"></div>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#home" class="nav__logo">NB<span>.</span></a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li><a href="#about" class="nav__link">Обо мне</a></li>
+                    <li><a href="#skills" class="nav__link">Навыки</a></li>
+                    <li><a href="#projects" class="nav__link">Проекты</a></li>
+                    <li><a href="#experience" class="nav__link">Опыт</a></li>
+                    <li><a href="#awards" class="nav__link">Достижения</a></li>
+                    <li><a href="#contact" class="nav__link nav__link--cta">Написать</a></li>
+                </ul>
+            </div>
+            <button class="nav__toggle" id="nav-toggle" aria-label="Меню">
+                <span></span><span></span><span></span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- ═══ HERO ═══ -->
+        <section class="hero" id="home">
+            <div class="hero__bg">
+                <div class="hero__grid"></div>
+                <div class="hero__blob hero__blob--1"></div>
+                <div class="hero__blob hero__blob--2"></div>
+            </div>
+            <div class="container hero__container">
+                <div class="hero__content">
+                    <div class="hero__eyebrow">
+                        <span class="hero__status"><span class="pulse"></span>Доступен для проектов</span>
+                    </div>
+                    <h1 class="hero__title">
+                        <span class="hero__title--line">Николай</span>
+                        <span class="hero__title--line hero__title--accent">Бибко</span>
+                    </h1>
+                    <p class="hero__role">Студент · Программист · Веб-разработчик</p>
+                    <p class="hero__desc">Студент 3 курса Амурского педагогического колледжа. Строю сайты, пишу код и верю, что хороший сон — основа продуктивности.</p>
+
+                    <div class="hero__tags">
+                        <span class="tag">HTML/CSS</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Git</span>
+                        <span class="tag">Factorio 🏭</span>
+                    </div>
+
+                    <div class="hero__actions">
+                        <a href="#contact" class="btn btn--primary">
+                            <i class='bx bx-send'></i> Написать мне
+                        </a>
+                        <a href="#projects" class="btn btn--outline">
+                            <i class='bx bx-grid-alt'></i> Посмотреть проекты
+                        </a>
+                        <a href="#awards" class="btn btn--ghost">
+                            <i class='bx bx-medal'></i> Достижения
+                        </a>
+                    </div>
+
+                    <div class="hero__stats">
+                        <div class="stat">
+                            <span class="stat__num">3+</span>
+                            <span class="stat__label">Проекта</span>
+                        </div>
+                        <div class="stat__divider"></div>
+                        <div class="stat">
+                            <span class="stat__num">2+</span>
+                            <span class="stat__label">Года опыта</span>
+                        </div>
+                        <div class="stat__divider"></div>
+                        <div class="stat">
+                            <span class="stat__num">5</span>
+                            <span class="stat__label">Сертификатов</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero__visual">
+                    <div class="hero__photo-frame">
+                        <div class="hero__photo-deco"></div>
+                        <img src="https://sun9-68.userapi.com/s/v1/ig2/-V_CrI6x0wRZgt5Tnv24zHYgg-jd2jcaChkqETxei4LuXfQDzOueHLTE5FPXEATR959fvN-f9Wc67ky48dWIJiAn.jpg?quality=95&as=32x25,48x37,72x55,108x83,160x123,240x185,360x277,469x361&from=bu&u=eIYHCNoKISQUkhZy2FbxpsET-1BuS88O0LVQXt10C_E&cs=469x361" alt="Николай Бибко" class="hero__photo">
+                        <div class="hero__photo-badge">
+                            <i class='bx bx-code-alt'></i>
+                            <span>Dev</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero__scroll">
+                <span>Прокрути вниз</span>
+                <div class="scroll__line"></div>
+            </div>
+        </section>
+
+        <!-- ═══ ABOUT ═══ -->
+        <section class="about section" id="about">
+            <div class="container">
+                <div class="about__container">
+                    <div class="about__img-side">
+                        <div class="about__img-frame">
+                            <img src="https://psv4.userapi.com/s/v1/d/C9OVwdRshAH5l9YCpH5OpMffKcOhYxMek75t3RHyhnoSAKhkxSQ86Izpct4g1lWcxNxKD7F1vPxIYgIpILw0vJo9LnCciYw4P8CqHx6e3aqzeDtf/detskoe_tigr.jpg" alt="Обо мне" class="about__img">
+                        </div>
+                        <div class="about__img-note">
+                            <i class='bx bxs-map-pin'></i>
+                            <span>Амурская область, Россия</span>
+                        </div>
+                    </div>
+
+                    <div class="about__content">
+                        <span class="label">— Давайте познакомимся</span>
+                        <h2 class="section__title left">Обо мне</h2>
+                        <p>Меня зовут Николай, я студент третьего курса Амурского педагогического колледжа. Программирование — это мой способ мыслить логически, решать сложные задачи и видеть конкретный результат своей работы.</p>
+                        <p>Люблю веб-разработку, увлекаюсь Factorio — игрой, где строишь заводы с друзьями и прокачиваешь навыки командной работы. И да, здоровый сон — моё главное хобби и жизненная философия 😄</p>
+
+                        <div class="about__skills-grid">
+                            <div class="about__skill-item">
+                                <i class='bx bx-code-curly'></i>
+                                <span>Веб-разработка</span>
+                            </div>
+                            <div class="about__skill-item">
+                                <i class='bx bxl-python'></i>
+                                <span>Python</span>
+                            </div>
+                            <div class="about__skill-item">
+                                <i class='bx bxl-git'></i>
+                                <span>Git & GitHub</span>
+                            </div>
+                            <div class="about__skill-item">
+                                <i class='bx bx-palette'></i>
+                                <span>UI / Figma</span>
+                            </div>
+                        </div>
+
+                        <div class="about__actions">
+                            <a href="#contact" class="btn btn--primary">Связаться со мной</a>
+                            <a href="#education" class="btn btn--outline">Моё образование</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══ EDUCATION ═══ -->
+        <section class="education section" id="education">
+            <div class="container">
+                <span class="label center">— Мой путь</span>
+                <h2 class="section__title">Образование</h2>
+                <div class="edu__grid">
+                    <div class="edu__card reveal">
+                        <div class="edu__year">2025 — н.в.</div>
+                        <div class="edu__icon"><i class='bx bxs-graduation'></i></div>
+                        <div class="edu__body">
+                            <h3>Амурский педагогический колледж</h3>
+                            <p class="edu__degree">Студент 3 курса · IT-специальность</p>
+                            <p>Изучаю программирование, веб-разработку и современные IT-технологии. Активно участвую в олимпиадах и конкурсах по программированию.</p>
+                        </div>
+                    </div>
+                    <div class="edu__card reveal">
+                        <div class="edu__year">2023 — 2024</div>
+                        <div class="edu__icon"><i class='bx bxs-certification'></i></div>
+                        <div class="edu__body">
+                            <h3>Курсы программирования</h3>
+                            <p class="edu__degree">Python и веб-разработка</p>
+                            <p>Прошёл специализированные курсы по Python, HTML, CSS и основам JavaScript. Разработал несколько учебных проектов.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══ SKILLS ═══ -->
+        <section class="skills section" id="skills">
+            <div class="container">
+                <span class="label center">— Что я умею</span>
+                <h2 class="section__title">Технические навыки</h2>
+                <div class="skills__grid">
+                    <div class="skill__cat reveal">
+                        <h3 class="skill__cat-title"><i class='bx bx-globe'></i> Веб-разработка</h3>
+                        <div class="skill__bar-item">
+                            <div class="skill__bar-info"><span>HTML5</span><span>90%</span></div>
+                            <div class="skill__track"><div class="skill__fill" style="--w:90%"></div></div>
+                        </div>
+                        <div class="skill__bar-item">
+                            <div class="skill__bar-info"><span>CSS3</span><span>85%</span></div>
+                            <div class="skill__track"><div class="skill__fill" style="--w:85%"></div></div>
+                        </div>
+                        <div class="skill__bar-item">
+                            <div class="skill__bar-info"><span>JavaScript</span><span>60%</span></div>
+                            <div class="skill__track"><div class="skill__fill" style="--w:60%"></div></div>
+                        </div>
+                    </div>
+                    <div class="skill__cat reveal">
+                        <h3 class="skill__cat-title"><i class='bx bx-terminal'></i> Языки</h3>
+                        <div class="skill__bar-item">
+                            <div class="skill__bar-info"><span>Python</span><span>80%</span></div>
+                            <div class="skill__track"><div class="skill__fill" style="--w:80%"></div></div>
+                        </div>
+                        <div class="skill__bar-item">
+                            <div class="skill__bar-info"><span>C++</span><span>50%</span></div>
+                            <div class="skill__track"><div class="skill__fill" style="--w:50%"></div></div>
+                        </div>
+                    </div>
+                    <div class="skill__cat reveal">
+                        <h3 class="skill__cat-title"><i class='bx bx-wrench'></i> Инструменты</h3>
+                        <div class="skill__bar-item">
+                            <div class="skill__bar-info"><span>VS Code</span><span>95%</span></div>
+                            <div class="skill__track"><div class="skill__fill" style="--w:95%"></div></div>
+                        </div>
+                        <div class="skill__bar-item">
+                            <div class="skill__bar-info"><span>Git</span><span>75%</span></div>
+                            <div class="skill__track"><div class="skill__fill" style="--w:75%"></div></div>
+                        </div>
+                        <div class="skill__bar-item">
+                            <div class="skill__bar-info"><span>Figma</span><span>65%</span></div>
+                            <div class="skill__track"><div class="skill__fill" style="--w:65%"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══ PROJECTS ═══ -->
+        <section class="projects section" id="projects">
+            <div class="container">
+                <span class="label center">— Мои работы</span>
+                <h2 class="section__title">Проекты</h2>
+                <div class="projects__grid">
+
+                    <div class="proj__card reveal">
+                        <div class="proj__img-wrap">
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Веб-сайт для школы">
+                            <div class="proj__overlay">
+                                <span class="tag tag--white">HTML/CSS</span>
+                                <span class="tag tag--white">JavaScript</span>
+                            </div>
+                        </div>
+                        <div class="proj__body">
+                            <h3>Веб-сайт для школы</h3>
+                            <p>Современный адаптивный сайт для образовательного учреждения с системой новостей и расписанием</p>
+                            <div class="proj__links">
+                                <a href="#" class="btn btn--sm btn--outline"><i class='bx bx-link-external'></i> Смотреть</a>
+                                <a href="#" class="btn btn--sm btn--ghost"><i class='bx bxl-github'></i> Код</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="proj__card reveal">
+                        <div class="proj__img-wrap">
+                            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Обучающий сайт">
+                            <div class="proj__overlay">
+                                <span class="tag tag--white">HTML/CSS</span>
+                                <span class="tag tag--white">Python</span>
+                            </div>
+                        </div>
+                        <div class="proj__body">
+                            <h3>Обучающий сайт о компьютерах</h3>
+                            <p>Интерактивный образовательный ресурс, объясняющий устройство и принципы работы компьютера</p>
+                            <div class="proj__links">
+                                <a href="пк.html" class="btn btn--sm btn--outline"><i class='bx bx-link-external'></i> Смотреть</a>
+                                <a href="#" class="btn btn--sm btn--ghost"><i class='bx bxl-github'></i> Код</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="proj__card reveal">
+                        <div class="proj__img-wrap">
+                            <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Портфолио">
+                            <div class="proj__overlay">
+                                <span class="tag tag--white">HTML/CSS</span>
+                                <span class="tag tag--white">JavaScript</span>
+                            </div>
+                        </div>
+                        <div class="proj__body">
+                            <h3>Личное портфолио</h3>
+                            <p>Современный адаптивный сайт-портфолио с анимациями и интерактивными элементами</p>
+                            <div class="proj__links">
+                                <a href="#" class="btn btn--sm btn--outline"><i class='bx bx-link-external'></i> Смотреть</a>
+                                <a href="#" class="btn btn--sm btn--ghost"><i class='bx bxl-github'></i> Код</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══ EXPERIENCE ═══ -->
+        <section class="experience section" id="experience">
+            <div class="container">
+                <span class="label center">— Хронология</span>
+                <h2 class="section__title">Опыт</h2>
+                <div class="timeline">
+                    <div class="tl__item reveal">
+                        <div class="tl__year">2022</div>
+                        <div class="tl__dot"></div>
+                        <div class="tl__card">
+                            <h3>Разработка сайта для школы</h3>
+                            <p>Участвовал в создании сайта для школы, применяя знания HTML и CSS</p>
+                        </div>
+                    </div>
+                    <div class="tl__item reveal">
+                        <div class="tl__year">2024</div>
+                        <div class="tl__dot"></div>
+                        <div class="tl__card">
+                            <h3>Олимпиада по HTML</h3>
+                            <p>Участвовал в олимпиаде по HTML, демонстрируя навыки веб-разработки</p>
+                        </div>
+                    </div>
+                    <div class="tl__item reveal">
+                        <div class="tl__year">2024</div>
+                        <div class="tl__dot"></div>
+                        <div class="tl__card">
+                            <h3>Обучающий сайт о компьютерах</h3>
+                            <p>Создал обучающий сайт, объясняющий устройство и принципы работы компьютера</p>
+                            <a href="пк.html" class="tl__link">Посмотреть проект <i class='bx bx-right-arrow-alt'></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══ AWARDS ═══ -->
+        <section class="awards section" id="awards">
+            <div class="container">
+                <span class="label center">— Мои успехи</span>
+                <h2 class="section__title">Грамоты и награды</h2>
+                <div class="awards__grid">
+
+                    <div class="award__card reveal">
+                        <div class="award__img-wrap">
+                            <img src="https://sun9-44.userapi.com/s/v1/if2/A083NIB-Zl4j3-yEJ3Flz_vceBIUhZox03mAv57D-Dg5KxuGrA6eV2Fa_WZk12wWFUOkxd7PReVxVi3PtRttB8bt.jpg?quality=95&as=32x23,48x34,72x51,108x77,160x114,240x171,360x257,480x343,540x386,640x457,720x514,1080x771,1106x790&from=bu&u=_RMBNxHcYNTWNIUyqKCFpm9rXPILIUuAzd1jcqgnT_4&cs=1106x790" alt="Сертификат Python">
+                        </div>
+                        <div class="award__body">
+                            <i class='bx bxs-award award__icon'></i>
+                            <h3>Сертификат по Python</h3>
+                            <p>Успешное прохождение курсов по языку программирования Python</p>
+                        </div>
+                    </div>
+
+                    <div class="award__card reveal">
+                        <div class="award__img-wrap">
+                            <img src="https://sun9-57.userapi.com/s/v1/if2/V5VjeRc1y0dLB7Llio9Jnms5bY-DXwQk2_dBZe5U4OerBw5FaTSt5widcq1VkgH3-X5bOYdb7ao7tLVv-T8Omfam.jpg?quality=95&as=32x23,48x34,72x51,108x76,160x113,240x170,360x255,480x339,540x382,640x453,720x509,1080x764,1124x795&from=bu&u=OvXVLMnpI4QDSwASSUG7U5J2fkZPVpnoC1-vQ9x4Cp0&cs=1124x795" alt="Сетевые технологии">
+                        </div>
+                        <div class="award__body">
+                            <i class='bx bxs-network-chart award__icon'></i>
+                            <h3>Основы сетевых технологий</h3>
+                            <p>Подтверждает участие в олимпиаде по сетевым технологиям</p>
+                        </div>
+                    </div>
+
+                    <div class="award__card reveal">
+                        <div class="award__img-wrap">
+                            <img src="https://sun9-21.userapi.com/s/v1/ig2/sJW4jPLYbCbktaoYaQaBxxd_3xD15t3CKyP5QIEYygt-TFeUv-bdF9mdmx761nRd2bWRd5KW5q0IySeRQfLuzJq3.jpg?quality=95&as=32x23,48x34,72x51,108x76,160x113,240x170,360x255,480x340,540x382,640x453,720x510,1080x765,1121x794&from=bu&u=MvvEa8iWzxaq3LkARhgGd7K7CVSJzIirtscWzp5MoR0&cs=1121x0" alt="Военно-патриотический диктант">
+                        </div>
+                        <div class="award__body">
+                            <i class='bx bxs-flag award__icon'></i>
+                            <h3>Военно-патриотический диктант</h3>
+                            <p>Подтверждает участие в военно-патриотической олимпиаде</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══ TESTIMONIAL ═══ -->
+        <section class="testimonials section" id="testimonials">
+            <div class="container">
+                <span class="label center">— Отзывы</span>
+                <h2 class="section__title">Что говорят обо мне</h2>
+                <div class="testimonials__wrap">
+                    <div class="testi__card reveal">
+                        <div class="testi__quote">"</div>
+                        <p>Николай показал себя как ответственный и талантливый студент. Его проекты всегда отличаются качеством выполнения и творческим подходом.</p>
+                        <div class="testi__author">
+                            <div class="testi__avatar"><i class='bx bxs-user-circle'></i></div>
+                            <div>
+                                <strong>Егор Тё</strong>
+                                <span>команда tfott</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══ CTA ═══ -->
+        <section class="cta section">
+            <div class="container">
+                <div class="cta__card reveal">
+                    <div class="cta__content">
+                        <h2>Есть идея для проекта?</h2>
+                        <p>Ищете ответственного разработчика? Напишите — обсудим возможности сотрудничества.</p>
+                        <div class="cta__btns">
+                            <a href="#contact" class="btn btn--primary btn--lg">
+                                <i class='bx bx-message-detail'></i> Начать диалог
+                            </a>
+                            <a href="https://t.me/weowtag" target="_blank" class="btn btn--white">
+                                <i class='bx bxl-telegram'></i> Telegram
+                            </a>
+                        </div>
+                    </div>
+                    <div class="cta__deco">
+                        <div class="cta__circle cta__circle--1"></div>
+                        <div class="cta__circle cta__circle--2"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══ CONTACT ═══ -->
+        <section class="contact section" id="contact">
+            <div class="container">
+                <span class="label center">— На связи</span>
+                <h2 class="section__title">Контакты</h2>
+                <div class="contact__grid">
+
+                    <div class="contact__info reveal">
+                        <h3>Давайте работать вместе!</h3>
+                        <p>Если у вас есть интересные проекты или вопросы — пишите!</p>
+                        <div class="contact__links">
+                            <a href="https://t.me/weowtag" target="_blank" class="contact__link">
+                                <div class="contact__link-icon"><i class='bx bxl-telegram'></i></div>
+                                <div>
+                                    <strong>Telegram</strong>
+                                    <span>@weowtag</span>
+                                </div>
+                                <i class='bx bx-right-arrow-alt contact__link-arrow'></i>
+                            </a>
+                            <a href="#" class="contact__link">
+                                <div class="contact__link-icon"><i class='bx bxl-vk'></i></div>
+                                <div>
+                                    <strong>ВКонтакте</strong>
+                                    <span>Написать в ВК</span>
+                                </div>
+                                <i class='bx bx-right-arrow-alt contact__link-arrow'></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <form class="contact__form reveal" id="contact-form">
+                        <div class="form__row">
+                            <div class="form__group">
+                                <label>Ваше имя</label>
+                                <input type="text" name="name" placeholder="Иван Иванов" required>
+                            </div>
+                            <div class="form__group">
+                                <label>Email</label>
+                                <input type="email" name="email" placeholder="ivan@mail.ru" required>
+                            </div>
+                        </div>
+                        <div class="form__group">
+                            <label>Сообщение</label>
+                            <textarea name="message" rows="5" placeholder="Расскажите о вашем проекте..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn--primary btn--full">
+                            <i class='bx bx-send'></i> Отправить сообщение
+                        </button>
+                    </form>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ═══ FOOTER ═══ -->
+    <footer class="footer">
+        <div class="container footer__inner">
+            <div class="footer__brand">
+                <a href="#home" class="nav__logo">NB<span>.</span></a>
+                <p>Студент · Программист · Разработчик</p>
+            </div>
+            <nav class="footer__nav">
+                <a href="#about">Обо мне</a>
+                <a href="#skills">Навыки</a>
+                <a href="#projects">Проекты</a>
+                <a href="#experience">Опыт</a>
+                <a href="#awards">Достижения</a>
+                <a href="#contact">Контакты</a>
+            </nav>
+            <div class="footer__socials">
+                <a href="https://t.me/weowtag" target="_blank" aria-label="Telegram"><i class='bx bxl-telegram'></i></a>
+                <a href="#" aria-label="VK"><i class='bx bxl-vk'></i></a>
+                <a href="#" aria-label="GitHub"><i class='bx bxl-github'></i></a>
+            </div>
+        </div>
+        <div class="footer__bottom container">
+            <p>© 2025 Николай Бибко. Все права защищены.</p>
+            <a href="#home" class="footer__top-btn" aria-label="Наверх"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
